@@ -5,20 +5,31 @@
 	<title>Document</title>
 </head>
 <body>
-<!-- exercice 3 -->
-	<a href="index2.php?dateDebut">Debut</a>
-	<a href="index2.php?dateFin">Fin</a>
+	
+	<a href="index2.php?nom">nom</a>
+	<a href="index2.php?prenom">prenom</a>
 	<?php 
-	$dateDebut="2/05/2016";
-	$dateFin="27/11/2016";
+	$nom='Nemare';
+	$prenom='Jean';
+	$home='home';
 
-	if (isset($_GET['dateDebut'])) {
-		echo $dateDebut;
+
+	if (!isset($_GET['nom'])) {
+		
 	}
-	if (isset($_GET['dateFin'])) {
-		echo $dateFin;
+	else{
+		echo $nom;
 	}
+	if (!isset($_GET['prenom'])) {
+		
+	}
+	else{
+		echo $prenom;
+	}
+
+
 	?>
+
 
 </body>
 </html>
